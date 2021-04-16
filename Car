@@ -1,0 +1,46 @@
+package Exercise3;
+
+import java.util.Scanner;
+
+public class Car {
+
+	String brand;
+	int maxSpeed;
+	int seat;
+	String size;
+	double price;
+	String model;
+	String colour;
+	
+	Scanner s = new Scanner(System.in);
+	
+	//default constructor
+	Car() {
+		System.out.println("Enter the brand of the car: ");
+		this.brand = s.nextLine();
+		System.out.println("Enter the max speed of the car: ");
+		this.maxSpeed = s.nextInt();
+		System.out.println("Enter the seat of the car: ");
+		this.seat = s.nextInt();
+		System.out.println("Enter the size of the car: ");
+		this.size = s.next();
+		System.out.println("Enter the price of the car: ");
+		this.price = s.nextDouble();
+		System.out.println("Enter the model of the car: ");
+		this.model = s.next();
+		System.out.println("Enter the colour of the car: ");
+		this.colour = s.next();
+		System.out.println();
+	}
+	
+	//Parameterized constructor
+	Car(String brand, int maxSpeed, int seat, String size, double price, String model, String colour) {
+		this.brand = brand;
+		this.maxSpeed = maxSpeed;
+		this.seat = seat;
+		this.size = size;
+		this.price = price;
+		this.model = model;
+		this.colour = colour;
+	}
+}
