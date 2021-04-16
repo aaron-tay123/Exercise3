@@ -1,0 +1,32 @@
+package Exercise3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Car honda = new Car();
+		System.out.println("--------------HONDA----------------");
+		System.out.println("Brand    : " + honda.brand);
+		System.out.println("Max Speed: " + honda.maxSpeed + "KM/h");
+		System.out.println("Seat     : " + honda.seat);
+		System.out.println("Size     : " + honda.size);
+		System.out.println("Price    : RM" + honda.price);
+		System.out.println("Model    : " + honda.model);
+		System.out.println("Colour   : " + honda.colour);
+
+		System.out.println();
+		
+		
+		Car ferrari = new Car("Ferrari 488", 2000000, 2, "Small", 1400000, "GTB 3.9 V8", "Yellow");
+		System.out.println("-------------FERRARI----------------");
+		System.out.println("Brand    : " + ferrari.brand);
+		System.out.println("Max Speed: " + ferrari.maxSpeed + "KM/h");
+		System.out.println("Seat     : " + ferrari.seat);
+		System.out.println("Size     : " + ferrari.size);
+		System.out.println("Price    : RM" + ferrari.price);
+		System.out.println("Model    : " + ferrari.model);
+		System.out.println("Colour   : " + ferrari.colour);
+
+	}
+
+}
